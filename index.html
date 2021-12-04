@@ -1,198 +1,93 @@
-<!DOCTYPE html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Allt om internet: Internets historia</title>
+    <title>list appender</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/green-among-us-3218508-2691066.png">
 </head>
-
 <body>
-    <header id="header">
-        <p>Allt om internet</p>
-        <nav>
-            <ul class="navlinks">
-                
-                <div class="dropdown">
-                    <a href="index.html"><button class="dropbtn" href="index.html">Internethistoria</button></a>
-                    <div class="dropdown-content">
-                      <a href="index.html#60s">60-tal</a>
-                      <a href="index.html#70s">70-tal</a>
-                      <a href="index.html#80s">80-tal</a>
-                      <a href="index.html#90s">90-tal</a>
-                      <a href="index.html#00s">2000-talet</a>
-                    </div>
-                  </div>
-
-                  <div class="dropdown">
-                    <a href="lagar.html"><button class="dropbtn">Lagar och bestämmelser</button></a>
-                    <div class="dropdown-content">
-                      <a href="lagar.html#gdpr">GDPR & personuppgifter</a>
-                      <a href="lagar.html#tryckfrihet">Tryckfrihet</a>
-                      <a href="lagar.html#yttrandefrihet">Yttrandefrihet</a>
-                      <a href="lagar.html#upphovsratt">Upphovsrätt</a>
-                      <a href="lagar.html#cc">Creative Commons</a>
-                    </div>
-                  </div>
-
-                  <div class="dropdown">
-                    <a href="orientering.html"><button class="dropbtn">Teknisk orientering</button></a>
-                    <div class="dropdown-content">
-                      <a href="orientering.html#osi">OSI-modellen</a>
-                      <a href="orientering.html#server-client">Server-client</a>
-                      <a href="orientering.html#http">HTTPS/HTTPS</a>
-                      <a href="orientering.html#dns">DNS</a>
-                    </div>
-                  </div>
-            </ul>
-        </nav>
-    </header>
 
     <div class="main">
 
-        <section class="intro" id="whatis">
-            <div class="container">
-            <div class="split">
-                <div>
-                    <img src="https://i.ibb.co/VN19HCJ/code-g4aab89c69-1920.jpg" alt="">
-                </div>
-                <div>
-                    <h2>Vad är egentligen internet?</h2>
-                    <br>
-                    <p>Internet är världens största globala nätverk som består av många ihopkopplade fysiska datornätverk. De kommunicerar med varandra via ett internetprotokoll som går ut på att alla anslutna datorer tilldelas en unik så kallad IP-adress. Internets huvudsakliga syfte är att tillåta människor dela information och kommunicera med varandra och används idag till allt från militära system och illegal (nät)handel till sociala medier och spel, till undervisning och dokumentation av fakta.</p>
-                    <br>
-                    <a href="https://sv.wikipedia.org/wiki/Internet#Historia" target="_blank" class="button1" style="background-color:#8B008B">Läs mer på Wikipedia</a>
-                </div>
-            </div>
-        </div>
-        </section>   
-
-<br><br><br>
-
-<section class="60s" id="60s">
-        <div class="container">
-        <div class="split">
-            <div>
-                <h2>60-talet: ARPANET, internets föregångare</h2>
-                <br>
-                <p>Idén om ett globalt datornätverk som internet formulerades av psykologen och MIT-forskaren JCR Lickrider så tidigt som 1963. Han talade om ett “intergalaktiskt nätverk” av datorer när endast ett fåtal datorer fanns i världen -- och de var stora som hela rum. Ett år tidigare hade ryssen Viktor Glushkov tagit fram en plan för ett liknande system som han kallade OGAS. Dock lyckades aldrig projektet i den utsträckning han hade hoppats.</p>
-                <br>
-                <p>Man brukar säga att internet föddes den 29 oktober 1969. Detta var nämligen datumet då det första meddelandet skickades via ARPANET, som ses som föregångaren till dagens internet. ARPANET stod för Advanced Research Projects Agency Network och utvecklades av DARPA, en avdelning av det amerikanska försvarsdepartementet.</p>
-                <br></div>
-            <div>
-                    <img src="https://itpeernetwork.intel.com/wp-content/uploads/sites/38/2019/05/ITPN_blog_60s_marquee.jpg" alt="">
-                </div>
-        </div>
+    <div class="form">
+        <h2>append to list</h2>
+        <input type="text" id="inputText" placeholder="submit your text">
+        <input class="button" type="button" onclick="addEntry()" value="add entry"/>
+        <input class="button" type="button" onclick="clearList()" value="clear list"/>
     </div>
-    </section>   
 
-<br><br><br>
+    <div class="divider"></div>
 
-<section class="img">
-   <div class="container">
-       <div class="fullbild">
-            <div><img src="https://cdn2.lamag.com/wp-content/uploads/sites/6/2018/11/INTERNET-19hfymwp1hcrejpg-1068x634.jpg" alt=""></div>
-            <br>
-            <div>Boelter Hall, University of California, 1969.</div>
-       </div>
-    
-   </div>
-</section>
-
-<br><br><br>  
-
-<section class="70s" id="70s">
-        <div class="container">
-        <div class="split">
-            <div>
-                <img src="https://1.bp.blogspot.com/-1DLFbnlRzjA/WAL6FXfRUQI/AAAAAAAAj1Y/9ZZSZ8HPSGkGj_hYOTEOb34CsxHzvIa3gCLcB/s1600/Oslo%2Bin%2Bthe%2B1970s%2B%25281%2529.jpg" alt="">
-            </div>
-            <div>
-                <h2>70-talet: ARPA sprids över världen & KOM</h2>
-                <br>
-                <p>Under dess första fyra år var ARPANET endast tillgängligt för det amerikanska försvaret, men 1973 kom detta att ändras. Den 15:e juni detta år kopplar en dator i Norge upp sig till nätverket, och det blir därmed det första internationella nätet.</p> 
-                <br>
-                <p>År 1978 lanserar den svenska professorn det revolutionerande KOM-systemet tillsammans med programmeraren Torgny Thorelius. Systemet fungerade som en slags social media av sin tid och tillät svenska användare för första gången kommunicera med varandra via nätet på en elektronisk anslagstavla och i chattrum. Vid sin höjdpunkt hade systemet cirka 2000 användare, som var både militära och privatpersoner. Det togs ur drift 1990. KOM har senare kommit att kallas för “70-talets Facebook”.</p>
-                </div>
-        </div>
+    <div class="output">
+        <h2>your list</h2>
+        <ul id="ul"></ul>
+        <p class="disclaimer" id="disclaimer">your list is empty.</p>
     </div>
-    </section> 
 
-    <br><br><br>
+    <div class="divider"></div>
 
-    <section class="80s" id="80s">
-            <div class="container">
-            <div class="split">
-                <div>
-                    <h2>80-talet: DNS!!!</h2>
-                    <br>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos laboriosam vel accusamus soluta, vero perspiciatis voluptatibus autem numquam reiciendis aliquid amet totam rerum quo, ducimus corrupti libero omnis? Sed vero quaerat incidunt ut commodi temporibus quae accusamus unde impedit. Debitis ut velit incidunt, ipsa consequuntur dolorem nemo temporibus architecto nesciunt dolor molestias cupiditate. Ut praesentium saepe corporis quasi, doloremque quibusdam excepturi blanditiis omnis facere illo quis maxime reiciendis suscipit officiis.</p>
-                </div>
-                <div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/DNS_schema.svg" alt="">
-                    </div>
-            </div>
-        </div>
-        </section> 
+    <div class="footer">
+        <p>hotkeys: <span>enter</span> to add entry / <span>del</span> to clear list</p>
 
-    <br><br><br>
-
-    <section class="90s" id="90s">
-            <div class="container">
-            <div class="split">
-                    <div>
-                            <img src="http://c1.thejournal.ie/media/2015/12/classified-link-uk-752x501.jpg" alt="">
-                        </div>
-                <div>
-                    <h2>90-talet: internet blir mer tillgängligt</h2>
-                    <br>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit officia quas repellat dignissimos accusamus perferendis quibusdam? Quas temporibus quos dignissimos vitae consectetur. Rem magni nostrum rerum? Nostrum libero, vitae nemo assumenda itaque quaerat voluptate dolorem excepturi fugit, eos voluptates quidem cupiditate voluptatum consequatur placeat corporis amet molestiae! Ex temporibus esse ea officiis, maxime obcaecati ullam officia. Ab optio ullam nostrum nihil minima, quis exercitationem officiis maxime ipsa pariatur, similique rem eveniet error in tenetur sed voluptatibus, consectetur laudantium eos atque hic. Dolor velit error est? Sed omnis veniam ullam eligendi quos, libero illum a sunt cum eaque tempora tenetur maiores ab cumque repudiandae rerum ducimus corrupti, neque aspernatur, nostrum facere!</p>    
-                </div>
-            </div>
-        </div>
-        </section> 
-
-    <br><br><br>
-
-    <section class="img">
-            <div class="container">
-                <div class="fullbild">
-                     <div><img src="https://helios-i.mashable.com/imagery/articles/032HZdBIF99jgj2IsxFmg8d/hero-image.fill.size_1248x702.v1631655213.jpg" alt=""></div>
-                     <br>
-                     <div>Såhär kunde internet se ut 1999.</div>
-                </div>
-             
-            </div>
-         </section>    
-
-    <br><br><br>
-
-    <section class="00s" id="00s">
-            <div class="container">
-            <div class="split">
-                <div>
-                    <h2>2000-talet, nutiden och framtiden</h2>
-                    <br>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos laboriosam vel accusamus soluta, vero perspiciatis voluptatibus autem numquam reiciendis aliquid amet totam rerum quo, ducimus corrupti libero omnis? Sed vero quaerat incidunt ut commodi temporibus quae accusamus unde impedit. Debitis ut velit incidunt, ipsa consequuntur dolorem nemo temporibus architecto nesciunt dolor molestias cupiditate. Ut praesentium saepe corporis quasi, doloremque quibusdam excepturi blanditiis omnis facere illo quis maxime reiciendis suscipit officiis.</p>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consequatur corporis natus commodi dignissimos magni sint soluta doloribus, at debitis possimus accusamus vel! Culpa cupiditate maiores a. Et, officia magni!</p>
-                </div>
-                <div>
-                        <img src="http://c3.thejournal.ie/media/2014/01/msnemoticons-752x501.jpg" alt="">
-                    </div>
-            </div>
-        </div>
-        </section> 
-
-        <br><br><br>
+        <p class="footnote">developed in december 2021</p>
+    </div>
 
     </div>
 
-    <footer>
-        <div class="dropdown"><a href="mailto:emil.ekstrom@elev.ga.ntig.se" class="dropbtn">Kontakta mig via e-post</a></div>
-        <div class="copyright">© Copyright Emil Ekström 2022</div>
-    </footer>
+
 </body>
-
 </html>
+
+<script>
+
+    var list = document.getElementById('ul');
+
+function addEntry() {
+    var inputText = document.getElementById('inputText').value;
+    var entry = document.createElement('li');
+    entry.appendChild(document.createTextNode(inputText));
+    list.appendChild(entry);
+
+    document.getElementById('inputText').value=''; 
+
+    if (inputText.length > 0) {
+    const myButton = document.getElementById("disclaimer");
+    myButton.style.display = "none";
+    } else {
+        alert("Please write something in the field.");
+    }
+}
+
+function clearList() {
+    const myNode = document.getElementById("ul");
+
+    if (myNode.innerHTML == ''){
+        alert("Your list is already empty.");
+    }
+
+    myNode.innerHTML = '';
+
+    const myButtonn = document.getElementById("disclaimer");
+    myButtonn.style.display = "block";
+}
+
+function addEntryShortcut(e) {
+
+if (e.which == 13) {
+    addEntry();
+}
+}
+document.addEventListener('keyup', addEntryShortcut, false);
+
+function clearListShortcut(e) {
+
+if (e.which == 46) {
+    clearList();
+}
+}
+document.addEventListener('keyup', clearListShortcut, false);
+
+
+</script>
